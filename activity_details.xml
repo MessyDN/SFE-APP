@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Details">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dp"
+        android:text="PizzaCake"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/dateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6dp"
+        android:text="16/07/2022"
+        android:textColor="#424242" />
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_below="@+id/dateText"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="58dp" />
+
+    <TextView
+        android:id="@+id/calories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:text="Calories"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+
+        android:id="@+id/caloriesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/calories"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="13dp"
+        android:layout_toEndOf="@id/calories"
+        android:text="420"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/HomeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home" />
+
+
+</RelativeLayout>
